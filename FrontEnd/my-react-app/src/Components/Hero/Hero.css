@@ -1,0 +1,51 @@
+*{
+    font-family: "Poppins", sans-serif;
+    
+    font-style: normal;
+    margin: 0px;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 114px;
+}
+
+
+.hero-latest-btn{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 27px;
+    background-color: #ed5151;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 8px;
+    width: 279px;
+   }
+.hero-left .arrowIcon{
+    height: 32px;
+
+   }
+   .hero-left p{
+    font-size: 66px;
+    font-weight: bold;
+}
+.hero-right{
+    margin-right: 30px;
+}
+.handicon{
+    height: 30px;
+    width: 30px;
+}
+.hand-hand-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.heroImage{
+    height: 450px;
+   
+}

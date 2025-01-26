@@ -1,0 +1,13 @@
+.breakcrum{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 24px;
+    text-transform: capitalize;
+
+}
+.breakcrum img{
+    height: 40px;
+}

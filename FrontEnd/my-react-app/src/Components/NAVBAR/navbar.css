@@ -1,0 +1,201 @@
+
+body{
+    height: 100vh;
+}
+.navbar{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LOGO{
+    display: flex;
+    align-items: center;
+}
+
+
+.GYMLOGO{
+    height: 98px;
+    border-radius: 50%;
+    margin: 14px;
+}
+.lists{
+    display: flex;
+    gap: 70px;
+    text-decoration: none;
+}
+.Links li{
+    list-style: none;
+}
+.Links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+}
+
+.Links hr{
+    height: 3px;
+    border: none;
+    background-color:#ff6b6b;
+}
+.cart{
+    display: flex;
+}
+
+.cart-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    background-color: #ffa0a0;
+    height: 21px;
+    top: 23px;
+    right: 207px;
+    padding: 2px;
+   
+    border-radius: 50%;
+    width: 19px;
+}
+.cart-icon{
+color: black;
+}
+
+.LOGIN{
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    margin: 38px;
+    background-color: #ff6f6f;
+    color: white;
+    width: 147px;
+    height: 40px;
+    font-size: 21px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.login-cart{
+    display: flex;
+    align-items: center;
+    
+}
+
+@media(max-width:1280px) {
+    .navbar{
+        padding: 12px 42px;
+    }
+    .GYMLOGO{
+        height: 82px;
+        margin: 0px;
+    }
+    .lists{
+        display: flex;
+        gap: 40px;
+        text-decoration: none;
+    }
+    .cart-count{
+        top: 30px;
+    right: 249px;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .navbar{
+        padding: 12px 30px;
+    }
+    .lists{
+        gap: 25px;
+        font-size: 14px;
+    }
+    
+    .cart-count{
+        top: 30px;
+    right: 234px;
+    }
+    .login{
+        width: 100px;
+        font-size: 14px;
+    }
+    .LOGO{
+        display: flex;
+        align-items: center;
+    }
+    .GYMLOGO{
+        height: 70px;
+        margin: 0px;
+    }
+
+}
+.nav-drop-down{
+    display: none;
+}
+
+@media (max-width:800px) {
+
+    .navbar{
+        padding: 10px 0px;
+    }
+    .nav-drop-down{
+
+        display: block;
+        margin: 7px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    
+     .lists{
+        display: none;
+        height: 35px;
+        width: 100%;
+        background-color: white;
+        
+        top: 32px;
+        right: 47px;
+        
+    }
+    .cart-count{
+        top: 30px;
+    right: 124px;
+    }
+    .nav-menu-visible{
+        display: flex;
+        padding: 0px;
+        margin: 0px 19px;
+        
+    }
+
+    
+}
+
+@media (max-width:500px){
+    
+    .nav-drop-down{
+
+        display: block;
+        margin: 7px;
+        rotate: 0deg;
+        transition: 0.5s;
+    }
+    .Links{
+        height: 196px;
+        position: relative;
+        top: 111px;
+        right: 40px;
+        background: white;
+    }
+    .nav-menu-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 0px;
+        margin: 0px 24px 0px 0px;
+        cursor: pointer;
+        
+    }
+    
+   
+}
