@@ -13,6 +13,8 @@ const { send } = require("process");
 app.use(express.json());
 app.use(cors());
 
+const _dirname = path.resolve()
+
 // Database Connection
 mongoose.connect(
     "mongodb+srv://Kabir:pb42d1644@cluster0.m8fw6.mongodb.net/e-commerce",
@@ -303,6 +305,11 @@ app.post('/getcart',fetchUser,async (req,res)=>{
     let userData = await Users.findOne({_id:req.user.id})
     res.json(userData.cartData)
     
+})
+
+app.use(express.static(path.join(_dirname,"/FrontEnd//build")))
+app.get('*',(_,res)=>{
+    res.sendFile(path.resolve(_dirname,"FrontEnd","build","index.html"))
 })
 
 app.listen(port,(error)=>{
