@@ -9,15 +9,20 @@ const cors = require("cors");
 const { type } = require("os");
 const { error } = require("console");
 const { send } = require("process");
+require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
+
+const username = process.env.userName
+
+
 
 const _dirname = path.resolve()
 
 // Database Connection
 mongoose.connect(
-    "mongodb+srv://Kabir:pb42d1644@cluster0.m8fw6.mongodb.net/e-commerce",
+    `mongodb+srv://${username}@cluster0.m8fw6.mongodb.net/e-commerce`,
     { useNewUrlParser: true, useUnifiedTopology: true }
   ).catch((error) => console.log("Error connecting to MongoDB:", error));
   
