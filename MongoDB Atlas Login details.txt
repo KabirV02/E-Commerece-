@@ -1,6 +1,1 @@
-MongoDB Atlas Login details
 
-Login :- kabirv052@gmail.com
-
-username :- Kabir
-password :- pb42d1644
